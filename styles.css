@@ -6,7 +6,7 @@ body {
 
 /* Navbar Styles */
 #navbar {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   background-color: #333;
@@ -45,6 +45,13 @@ body {
 
 .welcome-container {
   text-align: center;
+  max-width: 600px;
+}
+
+#welcome-section img {
+  width: 200px;
+  height: auto;
+  border-radius: 10%;
 }
 
 /* Projects Section Styles */
@@ -161,3 +168,21 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+/* Accessibility Improvements */
+a:focus,
+button:focus {
+  outline: 2px solid #fff; /* Visible focus style */
+  outline-offset: 3px; /* Offset to prevent clipping */
+}
+
+/* Contrast Ratios */
+body {
+  color: #000; /* Default text color */
+}
+
+.project-tile,
+footer {
+  color: #fff; /* Set text color for elements with light background */
+}
+
