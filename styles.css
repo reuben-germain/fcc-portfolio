@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: monospace, Arial, sans-serif;
+}
+
+/* Navbar Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 50px 0;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#navbar ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: aqua;
+}
+
+/* Welcome Section Styles */
+#welcome-section {
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  text-align: center;
+}
+
+/* Projects Section Styles */
+#projects {
+  padding: 50px 0;
+}
+
+.project-tile {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto 20px;
+  max-width: 600px;
+}
+
+.project-tile h2 {
+  margin-top: 0;
+}
+
+.project-tile p {
+  margin-bottom: 10px;
+}
+
+.project-tile a {
+  display: block;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project-tile a:hover {
+  background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+#linkedin {
+  color: #0a66c2;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px) {
+
+  /* Navbar Styles */
+  #navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Welcome Section Styles */
+  #welcome-section {
+    padding: 50px 0;
+  }
+
+  .welcome-container h1 {
+    font-size: 24px;
+  }
+
+  /* Projects Section Styles */
+  .project-tile {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* Navbar Styles */
+  #navbar ul li {
+    margin: 0 20px;
+  }
+
+  /* Welcome Section Styles */
+  #welcome-section {
+    padding: 100px 0;
+  }
+
+  .welcome-container h1 {
+    font-size: 36px;
+  }
+
+  /* Projects Section Styles */
+  .project-tile {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
