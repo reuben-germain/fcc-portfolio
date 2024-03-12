@@ -49,6 +49,7 @@ body {
   text-align: center;
   max-width: 600px;
   margin-bottom: 50px;
+  word-wrap: break-word;
 }
 
 #welcome-section img {
@@ -179,17 +180,20 @@ footer {
 /* Accessibility Improvements */
 a:focus,
 button:focus {
-  outline: 2px solid #fff; /* Visible focus style */
-  outline-offset: 3px; /* Offset to prevent clipping */
+  outline: 2px solid #fff;
+  /* Visible focus style */
+  outline-offset: 3px;
+  /* Offset to prevent clipping */
 }
 
 /* Contrast Ratios */
 body {
-  color: #000; /* Default text color */
+  color: #000;
+  /* Default text color */
 }
 
 .project-tile,
 footer {
-  color: #fff; /* Set text color for elements with light background */
+  color: #fff;
+  /* Set text color for elements with light background */
 }
-
