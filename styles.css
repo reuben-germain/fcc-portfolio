@@ -10,7 +10,7 @@ body {
   top: 0;
   width: 100%;
   background-color: #333;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 #navbar ul {
@@ -36,24 +36,20 @@ body {
 
 /* Welcome Section Styles */
 #welcome-section {
-  /*height: 100vh;*/
   background-color: #f0f0f0;
-  border-radius: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .welcome-container {
-  text-align: center;
   max-width: 600px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
   word-wrap: break-word;
 }
 
 #welcome-section img {
-  width: 12.5rem;
+  max-width: 100%;
   height: auto;
   border-radius: 10%;
 }
@@ -64,7 +60,7 @@ h2 {
 
 /* Projects Section Styles */
 #projects {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .project-tile {
@@ -130,7 +126,6 @@ footer {
 
 /* Mobile Devices */
 @media only screen and (max-width: 600px) {
-
   /* Navbar Styles */
   #navbar ul li {
     display: block;
@@ -139,11 +134,11 @@ footer {
 
   /* Welcome Section Styles */
   #welcome-section {
-    padding: 50px 0;
+    margin-top: 10px;
   }
 
-  .welcome-container h1 {
-    font-size: 24px;
+  .welcome-container {
+    padding: 0 10px;
   }
 
   /* Projects Section Styles */
@@ -153,9 +148,8 @@ footer {
   }
 }
 
-/* Tablet Devices */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-
+/* Tablet and Desktop Devices */
+@media only screen and (min-width: 601px) {
   /* Navbar Styles */
   #navbar ul li {
     margin: 0 20px;
@@ -163,11 +157,11 @@ footer {
 
   /* Welcome Section Styles */
   #welcome-section {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 
-  .welcome-container h1 {
-    font-size: 36px;
+  .welcome-container {
+    padding: 0 20px;
   }
 
   /* Projects Section Styles */
@@ -175,25 +169,4 @@ footer {
     padding: 20px;
     margin-bottom: 20px;
   }
-}
-
-/* Accessibility Improvements */
-a:focus,
-button:focus {
-  outline: 2px solid #fff;
-  /* Visible focus style */
-  outline-offset: 3px;
-  /* Offset to prevent clipping */
-}
-
-/* Contrast Ratios */
-body {
-  color: #000;
-  /* Default text color */
-}
-
-.project-tile,
-footer {
-  color: #fff;
-  /* Set text color for elements with light background */
 }
